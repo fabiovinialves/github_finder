@@ -1,0 +1,115 @@
+:root {
+  --bg-color: #071430;
+  --page-overlay: rgba(4, 9, 20, 0.42);
+
+  --text-color: #ffffff;
+  --muted-color: #9da5d1;
+
+  --card-bg: rgba(29, 33, 51, 0.88);
+  --card-border: rgba(157, 165, 209, 0.65);
+
+  --button-bg: #11162b;
+  --button-color: #ffffff;
+  --button-secondary-bg: #020202;
+
+  --input-bg: #ffffff;
+  --input-color: #2b3566;
+  --input-placeholder: #6d78a8;
+
+  --accent: #ccc127;
+  --accent-contrast: #111111;
+
+  --shadow: 0 14px 30px rgba(0, 0, 0, 0.22);
+}
+
+html[data-theme="light"] {
+  --bg-color: #dfeafe;
+  --page-overlay: rgba(255, 255, 255, 0.45);
+
+  --text-color: #10233d;
+  --muted-color: #36507c;
+
+  --card-bg: rgba(255, 255, 255, 0.84);
+  --card-border: rgba(76, 112, 167, 0.35);
+
+  --button-bg: #2b5fb6;
+  --button-color: #ffffff;
+  --button-secondary-bg: #173261;
+
+  --input-bg: #f5f8ff;
+  --input-color: #10233d;
+  --input-placeholder: #6f87ab;
+
+  --accent: #f0cf43;
+  --accent-contrast: #10233d;
+
+  --shadow: 0 14px 34px rgba(16, 35, 61, 0.12);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+  color: var(--text-color);
+  transition:
+    background-color 0.25s ease,
+    color 0.25s ease,
+    border-color 0.25s ease,
+    box-shadow 0.25s ease;
+}
+
+html,
+body {
+  width: 100%;
+  min-height: 100%;
+}
+
+body {
+  min-height: 100vh;
+  position: relative;
+  isolation: isolate;
+  background-color: var(--bg-color);
+}
+
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  z-index: -2;
+  background-image: url("assets/images/git_pagina.png");
+  background-repeat: no-repeat;
+  background-position: center left;
+  background-size: cover;
+}
+
+body::after {
+  content: "";
+  position: fixed;
+  inset: 0;
+  z-index: -1;
+  background: var(--page-overlay);
+}
+
+#root {
+  position: relative;
+  z-index: 1;
+}
+
+p {
+  text-align: center;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+button,
+input {
+  font: inherit;
+}
+
+input::placeholder {
+  color: var(--input-placeholder);
+}

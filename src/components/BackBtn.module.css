@@ -1,0 +1,17 @@
+.back_btn {
+  position: absolute;
+  top: 1rem;
+  left: 1rem;
+  padding: 0.65rem 1rem;
+  color: var(--button-color);
+  background-color: var(--button-secondary-bg);
+  cursor: pointer;
+  border: 1px solid var(--card-border);
+  border-radius: 8px;
+  opacity: 0.95;
+  box-shadow: var(--shadow);
+}
+
+.back_btn:hover {
+  opacity: 1;
+}

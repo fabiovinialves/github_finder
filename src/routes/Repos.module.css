@@ -1,0 +1,24 @@
+.repos {
+  position: relative;
+  padding-top: 3.5rem;
+}
+
+.repos h2 {
+  font-size: 1.2rem;
+  text-align: center;
+  margin-bottom: 2rem;
+  text-shadow: 0 4px 16px rgba(0, 0, 0, 0.2);
+}
+
+.repos_container {
+  background-color: var(--card-bg);
+  padding: 2rem;
+  border-radius: 1rem;
+  border: 1px solid var(--card-border);
+  box-shadow: var(--shadow);
+  backdrop-filter: blur(8px);
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1.2rem;
+}

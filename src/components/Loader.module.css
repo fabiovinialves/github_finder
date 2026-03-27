@@ -1,0 +1,19 @@
+@keyframes rotate {
+  from {
+    -webkit-transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+  }
+}
+
+.loader {
+  animation: rotate 2s linear infinite;
+  position: absolute;
+  left: 50%;
+  margin-top: 40px;
+  margin-left: -25px;
+  font-size: 50px;
+  color: var(--accent);
+  filter: drop-shadow(0 0 10px rgba(204, 193, 39, 0.35));
+}
